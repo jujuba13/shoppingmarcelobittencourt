@@ -8,7 +8,7 @@ public class Funcoes {
 		
 	}
 public static int removeTextoItemDevolveInt(String texto) {
-	texto = texto.replace("Items", "");
+	texto = texto.replace(" items", "");
 	return Integer.parseInt(texto);
 }
 }

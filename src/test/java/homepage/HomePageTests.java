@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import base.BaseTests;
 import pages.CarrinhoPage;
+import pages.CheckoutPage;
 import pages.LoginPage;
 import pages.ModalProdutoPage;
 import pages.ProdutoPage;
@@ -166,7 +167,7 @@ String esperado_nomeProduto = "Humingbird printed t-shirt";
 	 Double esperado_totalTaxExlTotal = esperado_subtotalTotal  + esperado_shippingTotal;
 	 Double esperado_totalTaxIncTotal = 0.00;
 	 
-	 CarrinhoPage carrinhoPage;
+	// CarrinhoPage carrinhoPage;
 	 
 	 @Test	 
  public void IrParaCarrinho_InformaçõesPersistidas() {
@@ -175,7 +176,7 @@ String esperado_nomeProduto = "Humingbird printed t-shirt";
 	 
 	 incluirProdutoNoCarrinho_ProdutoIncluidoComSucesso(); 
 
-	 carrinhoPage = modalProdutoPage.clicarBotaoProceedToCheckout();
+	 CarrinhoPage carrinhoPage = modalProdutoPage.clicarBotaoProceedToCheckout();
 	 
 	 //Teste
 	 //Validar todos elementos da tela 
@@ -228,7 +229,7 @@ String esperado_nomeProduto = "Humingbird printed t-shirt";
 	 
 	 } 
 	 
-	 CheckoutPage checkoutPage;
+	 /*CheckoutPage checkoutPage;
 	 
 	  @Test
 	  
@@ -245,6 +246,6 @@ String esperado_nomeProduto = "Humingbird printed t-shirt";
 		  //Preencher informações 
 		  
 		  //Validar Informações na tela 
-	  }
+	  }*/
 	  }
 	 
